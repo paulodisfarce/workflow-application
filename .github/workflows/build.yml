@@ -54,7 +54,7 @@ jobs:
         run: |
           git config --global user.email $GH_EMAIL
           git config --global user.name $GH_USERNAME
-          sed -i "s#tag:.*#tag: $TAG#g" helm-chart-argocd/application/values.yaml
+          sed -i "s#tag:.*#tag: $TAG#g" helm-chart/application/values.yaml
           git add -A
           git commit -am "Trocando Tag - ${{ github.sha }}"
       - run: echo ${{ github }}
