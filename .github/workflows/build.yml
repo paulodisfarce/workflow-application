@@ -1,3 +1,5 @@
+name: CI PUSH TO ECR/MANIFEST REPO
+
 on:
   push:
     branches:
