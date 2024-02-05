@@ -43,7 +43,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: paulodisfarce/HELM-ArgoCD
+          repository: paulodisfarce/helm-chart-argocd
           ref: 'main'
           token: ${{ secrets.GH_TOKEN }}
       - name: setup git config
