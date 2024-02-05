@@ -35,7 +35,7 @@ jobs:
           docker tag $AWS_ECR_IMAGE:latest $AWS_ECR_REPOSITORY/$AWS_ECR_IMAGE:$TAG
           docker push $AWS_ECR_REPOSITORY/$AWS_ECR_IMAGE:$TAG
         
-  autalizando-manifesto:
+  manifest_helm:
     runs-on: ubuntu-latest
     needs: ['Build_and_push_ECR']
     steps:
