@@ -3,7 +3,7 @@
 $hostIP = $_SERVER['SERVER_ADDR'];
 
 // Exibe o endereçoIP
-echo "Endereço IP: " . $hostIP;
+echo "Endereço IP:" . $hostIP;
 ?>
 
 
